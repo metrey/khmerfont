@@ -1,0 +1,1 @@
+mvn archetype:generate -DgroupId=org.osify.khmerfont -DartifactId=KhmerFont -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
