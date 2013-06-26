@@ -3,14 +3,9 @@ package org.osify.khmerfont;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.fontbox.cff.Type1FontFormatter;
-import org.apache.fontbox.ttf.HeaderTable;
 import org.apache.fontbox.ttf.PostScriptTable;
 import org.apache.fontbox.ttf.TTFParser;
-import org.apache.fontbox.ttf.TTFTable;
 import org.apache.fontbox.ttf.TrueTypeFont;
-
-import sun.font.TrueTypeGlyphMapper;
 
 
 /**
