@@ -25,19 +25,19 @@ public class App
     public static void main( String[] args )
     {
         
-      TTFParser parser = new TTFParser();
-      try {
-          
-        TrueTypeFont font = parser.parseTTF(new File(FILE_NAME));
-        PostScriptTable postScriptTable = font.getPostScript();
-        for (String phName : postScriptTable.getGlyphNames()) {
-            System.out.println(phName);    
-        }
-        
-    } catch (IOException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    }
+	TTFParser parser = new TTFParser();
+	try {
+
+	    TrueTypeFont font = parser.parseTTF(new File(FILE_NAME));
+	    PostScriptTable postScriptTable = font.getPostScript();
+	    for (String phName : postScriptTable.getGlyphNames()) {
+		System.out.println(phName);
+	    }
+
+	} catch (IOException e) {
+	    // TODO Auto-generated catch block
+	    e.printStackTrace();
+	}
       
     }
 }
