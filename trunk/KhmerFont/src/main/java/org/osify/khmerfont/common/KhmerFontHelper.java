@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.osify.khmerfont;
+package org.osify.khmerfont.common;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -10,46 +10,36 @@ import java.awt.Graphics;
 import java.awt.font.FontRenderContext;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-
-import javax.imageio.ImageIO;
 
 /**
+ * KhmerFont
  * @author pongsametrey.sok
  *
  */
-public class FontExtractCharacterMain {
-
-    /**
-     * @param args
-     */
-    public static void main(String[] args) {
-	String ch = "ក";
-	BufferedImage img = stringToBufferedImage(ch);
-	System.out.println(img);
-	File outputfile = new File("c:/tmp/saved.png");
-	try {
-	    ImageIO.write(img, "png", outputfile);
-	} catch (IOException e) {
-	    // TODO Auto-generated catch block
-	    e.printStackTrace();
-	}
-    }
+public class KhmerFontHelper {
     
     /**
-     * http://stackoverflow.com/questions/17282495/java-parsing-truetype-font-to-extract-each-characters-as-image-its-code/17301696#17301696
+     * 
      * @param s
      * @return
      */
     public static BufferedImage stringToBufferedImage(String s) {
+	return stringToBufferedImage(s, "Khmer OS System", 12);
+    }
+    
+    /**
+     * 
+     * @param s
+     * @return
+     */
+    public static BufferedImage stringToBufferedImage(String s, String fontName, int fontSize) {
 	    //First, we have to calculate the string's width and height
 
 	    BufferedImage img = new BufferedImage(1, 1, BufferedImage.TYPE_4BYTE_ABGR);
 	    Graphics g = img.getGraphics();
 
 	    //Set the font to be used when drawing the string
-	    Font f = new Font("Kh Fasthand", Font.PLAIN, 48);
+	    Font f = new Font(fontName, Font.PLAIN, fontSize);
 	    g.setFont(f);
 
 	    //Get the string visual bounds
@@ -78,5 +68,4 @@ public class FontExtractCharacterMain {
 	    //Return the image
 	    return img;
 	}
-
 }
