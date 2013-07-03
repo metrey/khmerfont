@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Together bring Khmer Font example in programming.
 #labels Featured
 
 = Introduction =
@@ -6,5 +6,3 @@
 Using Java to play around Khmer font.
 
 This project is for learning purpose related to font and programming.
-
-
