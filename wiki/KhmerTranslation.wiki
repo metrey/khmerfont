@@ -1,0 +1,22 @@
+#summary Khmer Translation research / opensource
+
+= Introduction =
+
+Related resources where you can find about Khmer related translation research:
+* English-Khmer translation
+* Khmer-English translation
+* Others
+
+
+
+= Details =
+
+== English-Khmer S. Machine Translation ==
+English-Khmer Automatic Statistic Machine Translation (SMT) 
+
+[http://sourceforge.net/projects/englishkhmersmt/?source=directory]
+
+== Khmer Automatic Translation == 
+Khmer-English-Khmer Automatic Translation 
+
+[http://sourceforge.net/projects/khmerautotrans/?source=directory]
